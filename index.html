@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP js</title>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -19,7 +22,7 @@
         </nav>
     </header>
     <main>
-        <div class="container-fluid">
+        <div class="container">
             <h1 id="titre">Javascript</h1>
             <div class="calcul">
                 <h2>Le tableau est</h2> 
@@ -27,6 +30,50 @@
                 <h2>La moyenne du tableau est </h2>
                 <p id="moyenne">Nininona</p>
             </div>
+            <div class="row">
+                <form action="" class="col-6 mx-auto border">
+                    <div class="mb-3">
+                        <label for="">Homme</label>
+                        <input type="checkbox" value="Homme" id="checkH">
+                        <label for="">Femme</label>
+                        <input type="checkbox" value="Femme" id="checkF">
+                        <select name="" id="select">
+                            <option value="Coca">Coca</option>
+                            <option value="Cola">Cola</option>
+                            <option value="Café">Café</option>
+                        </select>
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">  
+                        <label for="exampleFormControlInput1" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button id="save" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+            <table class="table table-secondary">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
         </div>
     </main>
     <footer>
@@ -41,6 +88,6 @@
             </ul>
         </nav>
     </footer>
-    <script src = "./script.js"></script>
+    <script src = "./event.js"></script>
 </body>
 </html>
